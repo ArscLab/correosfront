@@ -16,7 +16,19 @@ const loadClients = () =>{
         },
         success: function(data) {
             $.LoadingOverlay("hide");
-            console.log(data);
+
+            $('#tbClients > tbody:last').append(`<td>Mau</td>
+            <td>Pzs</td>
+            <td>ced</td>
+            <td>Tel</td>
+            <td>date</td>
+            <td><a class="btn"><i class="fa-solid fa-pen-to-square"></i></a>
+
+              <a class="btn" ><i class="fa-solid fa-trash-can"></i></a>
+
+            </td>`); 
+
+            
         },
         error: function(data) {
             $.LoadingOverlay("hide");
